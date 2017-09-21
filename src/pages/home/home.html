@@ -1,0 +1,34 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>IU</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+<!--   <h3>Ionic Menu Starter</h3>
+
+  <p>
+    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
+  </p>
+
+  <button ion-button secondary menuToggle onclick="showAlert()">Toggle Menu</button> -->
+    <ion-slides pager autoplay="1000" speed="800" loop="true" autoplayDisableOnInteration="true">
+        <ion-slide>
+            <img src=".././assets/images/img_0.JPG">
+        </ion-slide>
+        <ion-slide>
+            <img src=".././assets/images/img_1.JPG">
+        </ion-slide>
+        <ion-slide>
+            <img src=".././assets/images/img_2.JPG">
+        </ion-slide>
+        <ion-slide>
+            <img src=".././assets/images/img_3.JPG">
+        </ion-slide>
+    </ion-slides>
+    <button ion-button (click)="showAlert()" style="width: 100%">Show Basic Alert</button>
+    <button ion-button (click)="presentActionSheet()" style="width: 100%">Show Action Sheet</button>
+</ion-content>
